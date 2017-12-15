@@ -4,13 +4,13 @@ aws is a cloud services platform,in which the services can be mixed and match to
 
 # Elastic Cloud Compute
 
-==>Elastic Compute Cloud (EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud.
-==>EC2 eliminates the need to invest in hardware up front, so applications can be developed and deployed faster.
-==>EC2 can be used to launch as many or as few virtual servers as you need, configure security and networking, and manage storage.
-==>EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+* Elastic Compute Cloud (EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud.
+* EC2 eliminates the need to invest in hardware up front, so applications can be developed and deployed faster.
+* EC2 can be used to launch as many or as few virtual servers as you need, configure security and networking, and manage storage.
+* EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
 
 # EC2 features
-=>In aws Virtual computing environments, known as Ec2 instances
+In aws Virtual computing environments, known as Ec2 instances
 
 ## AMI(Amazon Machine Images)
 Preconfigured templates for your instances, known as Amazon Machine Images (AMIs), that package the bits you need for your server (including the operating system and additional software)
