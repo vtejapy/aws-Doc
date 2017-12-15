@@ -2,7 +2,7 @@ what is aws ?
 
 aws is a cloud services platform,in which the services can be mixed and match to create any kind of infracture.
 
-#Elastic Cloud Compute
+Elastic Cloud Compute
 
 ==>Elastic Compute Cloud (EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud.
 ==>EC2 eliminates the need to invest in hardware up front, so applications can be developed and deployed faster.
