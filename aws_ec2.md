@@ -41,3 +41,16 @@ Static IP addresses for dynamic cloud computing, known as Elastic IP addresses
 
 ## VPC
 Virtual networks you can create that are logically isolated from the rest of the AWS cloud, and that you can optionally connect to your own network, known as Virtual private clouds (VPCs)
+
+## Accessing EC2
+# Amazon EC2 console
+Amazon EC2 console is the web-based user interface which can be accessed from AWS management console
+# AWS Command line Interface (CLI)
+Provides commands for a broad set of AWS products, and is supported on Windows, Mac, and Linux.
+# Amazon EC2 Command Line Interface (CLI) tools
+Provides commands for Amazon EC2, Amazon EBS, and Amazon VPC, and is supported on Windows, Mac, and Linux
+# AWS Query API
+Query API allows for requests are HTTP or HTTPS requests that use the HTTP verbs GET or POST and a Query parameter named Action
+# AWS SDK libraries
+AWS provide libraries in various languages which provide basic functions that automate tasks such as cryptographically signing your requests, retrying requests, and handling error responses
+
