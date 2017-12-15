@@ -13,9 +13,8 @@ aws is a cloud services platform,in which the services can be mixed and match to
 In aws Virtual computing environments, known as Ec2 instances
 
 ## AMI(Amazon Machine Images)
-Preconfigured templates for your instances, known as Amazon Machine Images (AMIs), that package the bits you need for your server (including the operating system and additional software)
-
-## An Amazon Machine Image (AMI) is a special type of pre-configured operating system and virtual application software which is used to
+* Preconfigured templates for your instances, known as Amazon Machine Images (AMIs), that package the bits you need for your server (including the operating system and additional software)
+* An Amazon Machine Image (AMI) is a special type of pre-configured operating system and virtual application software which is used to
 create a virtual machine within the
 Amazon Elastic Compute Cloud (EC2)
 
