@@ -32,5 +32,5 @@ Multiple physical locations for your resources, such as instances and Amazon EBS
 A firewall that enables you to specify the protocols, ports, and source IP ranges that can reach your instances using security groups
 ==>Elastic IP addresses
 Static IP addresses for dynamic cloud computing, known as Elastic IP addresses
-==>VPC
+==>VPC (Virtual Private Cloud)
 Virtual networks you can create that are logically isolated from the rest of the AWS cloud, and that you can optionally connect to your own network, known as Virtual private clouds (VPCs)
