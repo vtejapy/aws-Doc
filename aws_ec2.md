@@ -1,44 +1,44 @@
-#what is aws ?
+# what is aws ?
 
 aws is a cloud services platform,in which the services can be mixed and match to create any kind of infracture.
 
-#Elastic Cloud Compute
+# Elastic Cloud Compute
 
 ==>Elastic Compute Cloud (EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud.
 ==>EC2 eliminates the need to invest in hardware up front, so applications can be developed and deployed faster.
 ==>EC2 can be used to launch as many or as few virtual servers as you need, configure security and networking, and manage storage.
 ==>EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
 
-#EC2 features
+# EC2 features
 =>In aws Virtual computing environments, known as Ec2 instances
 
-=>AMI(Amazon Machine Images)
+## =>AMI(Amazon Machine Images)
 Preconfigured templates for your instances, known as Amazon Machine Images (AMIs), that package the bits you need for your server (including the operating system and additional software)
 
-=>An Amazon Machine Image (AMI) is a special type of pre-configured operating system and virtual application software which is used to
+## =>An Amazon Machine Image (AMI) is a special type of pre-configured operating system and virtual application software which is used to
 create a virtual machine within the
 Amazon Elastic Compute Cloud (EC2)
 
-=>Instance types
+## =>Instance types
 Various configurations of CPU, memory, storage, and networking capacity for your instances, known as Instance types
 
-=>key pairs
+## =>key pairs
 Secure login information for your instances using key pairs (AWS stores the public key, and you store the private key in a secure place)
 
-=>Amazon EBS
+## =>Amazon EBS
 Storage volumes for temporary data that’s deleted when you stop or terminate your instance, known as Instance store volumes
 
-=>Instance store volumes
+## =>Instance store volumes
 Persistent storage volumes for your data using Amazon Elastic Block Store (Amazon EBS), known as Amazon EBS volumes
 
-==>Regions and Availability Zones
+## ==>Regions and Availability Zones
 Multiple physical locations for your resources, such as instances and Amazon EBS volumes, known as Regions and Availability Zones
 
-==>security groups
+## ==>security groups
 A firewall that enables you to specify the protocols, ports, and source IP ranges that can reach your instances using security groups
 
-==>Elastic IP addresses
+## ==>Elastic IP addresses
 Static IP addresses for dynamic cloud computing, known as Elastic IP addresses
 
-==>VPC
+## ==>VPC
 Virtual networks you can create that are logically isolated from the rest of the AWS cloud, and that you can optionally connect to your own network, known as Virtual private clouds (VPCs)
