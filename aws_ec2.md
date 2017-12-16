@@ -54,3 +54,77 @@ Query API allows for requests are HTTP or HTTPS requests that use the HTTP verbs
 ### AWS SDK libraries
 AWS provide libraries in various languages which provide basic functions that automate tasks such as cryptographically signing your requests, retrying requests, and handling error responses
 
+### Security Groups
+ 
+Security Groups are virtual firewalls that allow you to restrict access to EC2 instances on Protocol, Port Range, and Source IPs  
+ 
+- One EC2 instance can be associated with 1 or more Security Groups.  
+- There are 'Inbound' and 'Outbound' rules.  
+- All Inbound traffic is Blocked by default
+- All Outbound traffic is Allowed by default
+- Security Groups are 'stateful' which means that any Inbound rule a mirror Outbound rule is added.  
+- Outbound rules include Destination IP range in addtion to those in Inbound rules.  
+- Cannot add 'deny' rules only allow.  
+## Network Options 
+ 
+- Automatically created Default VPC is default network
+- One subnet equals one Availability Zone  
+ ### SSH to instance
+ 
+- Requires key pair for instances associated Security Group that allows SSH
+- chmod 400 permissions set on key
+- To login: ssh ec2-user@public_ip_address -i keyName.pem
+ ### Status Checks
+ 
+System Status - verify instance is reachable.  
+Instance Status - verify instance reachable and instance is up at OS level. 
+## EC2 Instance Types
+ 
+D2 Dense Storage
+R4 Memory Optimised
+M4 General Purpose
+C4 Compute Optimised
+G2 Graphics Intensive
+I2 High Speed Storage
+F1 Field Programmable Gate Array
+T2 Low Cost, General Purpose
+P2 Graphics/General purpose GPU
+X1 Memory Optimised 
+
+## EBS
+ 
+Elastic Block Storage  
+ 
+- Storage volumes attached to EC2 instances
+- Block based storage so can run applications
+- Placed in specific Availability Zone
+- Automatically replicated within Availabilty Zone to prevent single component failure
+ 
+Root devices cannot be encrypted by standard but can be if you create own AMI and encrypt the root device when you create the AMI.  
+ 
+Additional volumes can be encrypted.  
+ 
+### Types
+ 
+- General Purpose SSD (GP2)  10,000 IOPS
+- Provisioned IOPS SSD (IO1) More than 10,000 IOPS
+- Throughput Optimised HDD (ST1) Frequently accessed
+- Cold HDD (SC1) Less frequently accessed
+- Magnetic (Standard) Standard, cheap and infrequently accessed
+ 
+Cold HDD and Throughput Optimised HDD cannot be attached to Root volume  
+ 
+By default when deleting EC2 instance the attached EBS volumes will be deleted also as 'Delete on Termination' Termination Protection option checked by default.  
+ 
+** You cannot mount 1 EBS volume to multiple EC2 instances, consider EFS  
+ 
+EBS volumes can be changed on the fly (except for magnetic standard).  
+ 
+You can scale EBS Volumes up only.
+Volumes must be in the same AZ as the EC2 instances
+ 
+
+ 
+
+
+
