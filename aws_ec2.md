@@ -80,16 +80,16 @@ System Status - verify instance is reachable.
 Instance Status - verify instance reachable and instance is up at OS level. 
 ## EC2 Instance Types
  
-D2 Dense Storage
-R4 Memory Optimised
-M4 General Purpose
-C4 Compute Optimised
-G2 Graphics Intensive
-I2 High Speed Storage
-F1 Field Programmable Gate Array
-T2 Low Cost, General Purpose
-P2 Graphics/General purpose GPU
-X1 Memory Optimised 
+   * D2 Dense Storage
+   * R4 Memory Optimised
+   * M4 General Purpose
+   * C4 Compute Optimised
+   * G2 Graphics Intensive
+   * I2 High Speed Storage
+   * F1 Field Programmable Gate Array
+   * T2 Low Cost, General Purpose
+   * P2 Graphics/General purpose GPU
+   * X1 Memory Optimised 
 
 ## EBS
  
