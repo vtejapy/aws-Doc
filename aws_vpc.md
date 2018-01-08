@@ -110,6 +110,9 @@ gateway
 - Can be Private or Public Subnet
 - Private IP address assigned by default
 - Public IP address can be added to all instance if auto-assign Pubic IP address is turned on for Subnet
+So subnets come in two flavors, public and private. Here’s how they work:
+- If a subnet’s traffic is routed to an Internet gateway, the subnet is known as a public subnet.
+- If a subnet doesn’t have a route to the Internet gateway, the subnet is known as a private subnet.
 
 ## VPC Deletion:
 Deletion of the VPC, possible only after terminating all instances within the VPC,deletes all the components with the VPC for e.g. subnets, security groups, network ACLs, route tables, Internet gateways, VPC peering connections, and DHCP options.
