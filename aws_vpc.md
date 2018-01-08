@@ -17,7 +17,7 @@ A virtual private network (VPN) is a technology that creates a safe and encrypte
 ## Physical vs. Logical Topology
 
 ![Network](network.png)
-
+# VPC
 ## virtual private cloud
    * It is a logical data center, effectively a virtual network. 
    * Selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
