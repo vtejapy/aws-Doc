@@ -110,7 +110,7 @@ gateway
 - Can be Private or Public Subnet
 - Private IP address assigned by default
 - Public IP address can be added to all instance if auto-assign Pubic IP address is turned on for Subnet
-So subnets come in two flavors, public and private. Here’s how they work:
+### So subnets come in two flavors, public and private. Here’s how they work:
 - If a subnet’s traffic is routed to an Internet gateway, the subnet is known as a public subnet.
 - If a subnet doesn’t have a route to the Internet gateway, the subnet is known as a private subnet.
 
