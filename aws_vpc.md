@@ -144,10 +144,10 @@ stopped instance or an unattached Network Interface
 -  Each Instance is attached with default elastic network interface (Primary Network
 Interface eth0) and cannot be detached from the instance
 -  ENI has the following attributes
-- Primary private IP address
-- One or more secondary private IP addresses
-- One Elastic IP address per private IP address
-- One or more security groups, A MAC address
+   - Primary private IP address
+   - One or more secondary private IP addresses
+   - One Elastic IP address per private IP address
+   - One or more security groups, A MAC address
 
 
 ## VPC Security
