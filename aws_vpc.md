@@ -18,15 +18,14 @@ A virtual private network (VPN) is a technology that creates a safe and encrypte
 
 ![Network](network.png)
 
-# VPC
-
-Virtual Private Cloud  
-
-It is a logical data center, effectively a virtual network. Selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can leverage multiple layers of security, including security groups and network access control lists to help control access to Amazon EC2 instances in each subnet. You can also create Hardware VPN connection between your corporate datacenter and your VPC to use AWS to extend your corporate datacenter.
-
-- VPCs do not span Regions but can span Availability Zones
-- Maximum addressable IP range is /16
-- CIDR block - Classless Inter Domain Routing - used to specify IP addresses
+## virtual private cloud
+   * It is a logical data center, effectively a virtual network. 
+   * Selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
+   * You can leverage multiple layers of security, including security groups and network access control lists to help control access to Amazon EC2 instances in each subnet. 
+   * You can also create Hardware VPN connection between your corporate datacenter and your VPC to use AWS to extend your corporate datacenter.
+   * Maximum addressable IP range is /16
+   * Minimum addressable IP range is /28
+   * It required CIDR block - Classless Inter Domain Routing - used to specify IP addresses
 
 When creating a new VPC by default the following are created:
 - Main route table
