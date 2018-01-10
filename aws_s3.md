@@ -15,7 +15,7 @@
 
    * It regularly verifies the integrity of data stored using checksums e.g. if S3 detects there is any corruption in data, it is immediately repaired with the help of replicated data.
    * Even while storing or retrieving data, it checks incoming network traffic for any corrupted data packets.
-## S3 is Highly Scalable, since it automatically scales your storage according to your requirement and you only pay for the storage you use.
+S3 is Highly Scalable, since it automatically scales your storage according to your requirement and you only pay for the storage you use.
 
 
 ## Who needs Amazon S3?
