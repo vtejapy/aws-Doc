@@ -40,3 +40,31 @@ nstead of backing up your files in CD/DVDs to save more hard disk space, here’
 ### Easier files retrieval and sharing
 
 If you store your file online, you can access them anywhere as long as there’s Internet connection. Amazon S3 also allows me to communicate files better with friends, clients, and blog readers.
+
+## Bucket Naming
+   * bucket names must be 3 characters long and more than 63 characters
+   * bucket names must be serious of one or more labels
+   * aws recommends separationg labels witha single period(.)
+   * bucket names can contain lower case letters,numbers and hyphens
+   * Each label must start and end with a lowercase letter or a number.
+
+eg:
+```
+mybucket.1
+myawsbucket
+my.aws.bucket
+```
+
+## Bucket Restrictions
+   * you can create maximum 100 buckets in each of your aws account
+   * you can't transfer the ownership of a bucket.
+   * you can store unlimited number of objects in a bucket
+   * you cant create a bucket within another bucket.
+
+
+
+
+
+
+
+
