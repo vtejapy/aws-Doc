@@ -1,4 +1,19 @@
-# rds 
+# RDS
+
+
+##  Managed service RDS vs. a self-hosted database on virtual servers
+ 
+ 
+|     | Amazon RDS          | Self-hosted on virtual servers  |
+| ------------- |:-------------:| -----:|
+| Cost for AWS    |services Higher because RDS costs more than virtual servers (EC2) | Lower because virtual servers (EC2) are cheaper than RDS |
+| Total cost of ownership    | Lower because operating costs are split among many customers     |  Much higher because you need your own
+manpower to manage your database|
+| Quality | AWS professionals are responsible for the managed service.     |    You’ll need to build a team of professionals and implement quality control yourself. |
+| Flexibility | High, because you can choose a rela-tional database system and most of the configuration parameters |  Higher, because you can control every part of the relational database system you installed on virtual servers |
+
+
+
 
 ## Attributes needed to connect to an RDS database
 
@@ -27,4 +42,7 @@ MasterUserPassword | Password for the master user |
 Engine  | Describes the relational database system offered by this RDS instance.|
 
  
+ 
+
+
  
