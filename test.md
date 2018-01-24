@@ -1,4 +1,6 @@
-# rds attributes
+# rds 
+
+## Attributes needed to connect to an RDS database
 
 
 | Attribute        | Description    |     
@@ -14,7 +16,7 @@ MasterUserPassword | Password for the master user |
 
 
 
-# Attributes needed to connect to an RDS database
+## Attributes needed to connect to an RDS database
 
 
 | Attribute        | Description    |     
