@@ -3,7 +3,7 @@
 A Service for deploying and scalling web application and services.
 Upload your code and Elastic Beanstack automatically handles the deployment, from capacity provisioning, load balancing, auto-scalling to application health monitoring 
 
-##overview:
+## overview:
 
   * Integrate with vpc
   * Integrate with Iam
