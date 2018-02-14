@@ -32,6 +32,9 @@ A virtual machine is a program that acts as a virtual computer. It runs on your 
 
 ### How does virtualization work?
 ![Screenshot](virtualization.jpg)
+
+
+
 Software called hypervisors separate the physical resources from the virtual environments—the things that need those resources. Hypervisors can sit on top of an operating system (like on a laptop) or be installed directly onto hardware (like a server), which is how most enterprises virtualize. Hypervisors take your physical resources and divide them up so that virtual environments can use them.
 
 
@@ -154,7 +157,7 @@ Cold HDD and Throughput Optimised HDD cannot be attached to Root volume
  
 By default when deleting EC2 instance the attached EBS volumes will be deleted also as 'Delete on Termination' Termination Protection option checked by default.  
  
-** You cannot mount 1 EBS volume to multiple EC2 instances, consider EFS  
+** You cannot mount 1 EBS volume to multiple EC2 instances, consider EFS **   
  
 EBS volumes can be changed on the fly (except for magnetic standard).  
  
