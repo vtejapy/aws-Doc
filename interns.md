@@ -21,7 +21,7 @@ Wide Area Networks (WANs) connect networks in larger geographic areas, such as F
 
 virtualization refers to the act of creating a virtual (rather than actual) version of something, including virtual computer hardware platforms, storage devices, and computer network resources.
 
-###What is a hypervisor?
+### What is a hypervisor?
 
 A hypervisor is a program for creating and running virtual machines.
 
