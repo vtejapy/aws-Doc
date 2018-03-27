@@ -19,7 +19,7 @@
 * VPC allows you to set tenancy option for the Instances launched in it. By default, the tenancy option is shared. If dedicated option selected, all the instances within it are launched on a dedicated hardware overriding the individual instance tenancy setting
 * Deletion of the VPC is possible only after terminating all instances within the VPC, and deleting all the components with the VPC _for e.g. subnets, security groups, network ACLs, route tables, Internet gateways, VPC peering connections, and DHCP options_
 
-![AWS VPC Components][7]
+
 ## IP Addresses
 
 Instances launched in the VPC can have Private, Public and Elastic IP address assigned to it and are properties of ENI (Network Interfaces)
@@ -255,8 +255,6 @@ _for e.g. if you have a Rule No. 100 with Allow All and 110 with Deny All, the A
 * Traffic between VPC and AWS service does not leave the Amazon network
 * Endpoints currently do not support cross-region requests, ensure that the endpoint is created in the same region as your bucket
 * AWS currently supports endpoints for S3 service only (**Update** – With latest enhancement DynamoDB is also supported)
-
-![AWS VPC Endpoints][5]
 
 ## Configuration
 
