@@ -1,0 +1,42 @@
+#!/bin/bash
+
+delete-vpc() {
+  local teamName=${1:-myteam}
+  local region=${2:-us-east-1}
+
+  aws ec2 describe-vpcs --region ${region} | jq -r ".Vpcs[] | select(.Tags[].Value | contains(\"${teamName}\")) | .VpcId" 2>/dev/null |
+    while read vpcID; do
+      echo "# deleting vpc (${vpcID}) ..."
+    
+      aws ec2 describe-subnets --filters Name=vpc-id,Values=${vpcID} --region ${region} | jq -r '.Subnets[].SubnetId' |
+        while read subnetID; do
+          echo "#   deleting subnet (${subnetID}) ..."
+
+          aws ec2 delete-subnet --subnet-id ${subnetID} --region ${region}
+        done
+
+      aws ec2 describe-security-groups --filter Name=vpc-id,Values=${vpcID} --region ${region} | jq -r '.SecurityGroups[] | select(.GroupName != "default") | .GroupId' | 
+        while read sgID; do
+          echo "#   deleting security group (${sgID}) ..."
+
+          aws ec2 delete-security-group --group-id ${sgID} --region ${region}
+        done
+
+      aws ec2 describe-internet-gateways --filter Name=attachment.vpc-id,Values=${vpcID} --region ${region} | jq -r '.InternetGateways[].InternetGatewayId' | 
+        while read igwID; do
+          echo "#   deleting internet gateway (${igwID}) ..."
+
+          aws ec2 detach-internet-gateway --internet-gateway-id=${igwID} --vpc-id=${vpcID} --region ${region}
+          aws ec2 delete-internet-gateway --internet-gateway-id=${igwID} --region ${region}
+        done
+
+      aws ec2 describe-route-tables --filter Name=vpc-id,Values=${vpcID} --region ${region} | jq -r '.RouteTables[].RouteTableId' |
+        while read routeID; do
+          echo "#   deleting route table (${routeID}) ..."
+
+          aws ec2 delete-route-table --route-table-id ${routeID} --region ${region} &>/dev/null
+        done
+
+      aws ec2 delete-vpc --vpc-id ${vpcID} --region ${region}
+    done
+}
